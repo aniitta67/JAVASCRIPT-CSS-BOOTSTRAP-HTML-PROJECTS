@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+		
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+
+
+    <script>
+		function validateform(){
+		var fname=document.myform.fname.value;
+		console.log(`${fname}-firstname`);
+		var lname=document.myform.lname.value;
+		console.log(`${lname}-lastname`);
+		var pemail=document.myform.pemail.value;
+		console.log(`${pemail}-email`);
+        var pphone=document.myform.pphone.value;
+		console.log(`${pphone}-phone`);
+        var pswd=document.myform.pswd.value;
+		console.log(`${pswd}-pass`);
+        var repswd=document.myform.repswd.value;
+		console.log(`${repswd}-repass`);
+
+		var nameRegx=/^[a-zA-Z ]+$/;
+		var emailRegx=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        var phoneRegx=/^([0|\+[0-9]{1,5})?([7-9][0-9]{9})$/;
+
+        
+
+		if (fname==null || fname=="" || fname.length<=3){  
+        //    alert("First Name can't be blank or must contain more than 3 characters");  
+           document.getElementById("fnamepara").innerHTML="Must contain more than 3 characters";
+           return false;  
+        }
+		
+		 else if(!nameRegx.test(fname)){
+			// alert("Invalid first name format");  
+            document.getElementById("fnamepara").innerHTML="Invalid format";
+           return false;
+
+		}
+		
+		 else if(lname==null || lname=="" || lname.length<=3){
+			// alert("Second Name can't be blank or must contain more than 3 characters"); 
+            document.getElementById("lnamepara").innerHTML="Must contain more than 3 characters"; 
+            return false;
+
+		}
+		else if(!nameRegx.test(lname) ){
+			// alert("Invalid Second name format");
+            document.getElementById("lnamepara").innerHTML="Must contain more than 3 characters";  
+            return false;
+
+		}
+        else if(!emailRegx.test(pemail) ){
+			// alert("Invalid format or empty");  
+            document.getElementById("emailpara").innerHTML="Invalid format";
+            return false;
+		}
+        else if(!phoneRegx.test(pphone) ){
+			// alert("Invalid format or empty");  
+            document.getElementById("phonepara").innerHTML="Invalid format";
+            return false;
+		}
+        else if(pswd.length<4){
+			// alert("Invalid format or empty");  
+            document.getElementById("pswdpara").innerHTML="Enter more than 4 characters.";
+            return false;
+		}
+        else if(pswd!=repswd){
+			// alert("Invalid format or empty");  
+            document.getElementById("repswdpara").innerHTML="PASSWORD NOT MATCH";
+            return false;
+		}
+
+        else{
+			console.log("success");
+            alert("Registration successful")
+		}
+
+		}
+	</script>
+
+
+		<div class="wrapper" style="background-image: url('images/bg-registration-form-2.jpg');">
+			<div class="inner">
+				<form name="myform" method="get" action="./new.html" onsubmit="return validateform()" >
+					<h3>Registration Form</h3>
+					<div class="form-group">
+						<div class="form-wrapper">
+							<label for="" > <span style="color: red;">*</span> First Name</label>
+							<input type="text" class="form-control" name="fname" required> <p name="fnamepara" id="fnamepara" style="color: red;"></p>
+						</div>
+                         
+						<div class="form-wrapper">
+							<label for=""><span style="color: red;">*</span>Last Name</label>
+							<input type="text" class="form-control" name="lname" required> <p id="lnamepara" style="color: red;"></p>
+						</div>
+					</div>
+                    
+					<div class="form-wrapper">
+                       
+                        <label for=""><span style="color: red;">*</span>Email</label>
+						<input type="text" class="form-control" name="pemail" required/> <p id="emailpara" style="color: red;"></p>
+
+					</div>
+					<div class="form-wrapper">
+						<label for="phone"><span style="color: red;">*</span>Phone</label>
+						<input type="number" class="form-control" name="pphone" /><p id="phonepara" style="color: red;"></p>
+					</div>
+					<div class="form-wrapper">
+						<label for=""><span style="color: red;">*</span>Password</label>
+						<input type="password" class="form-control" required name="pswd"><p id="pswdpara" style="color: red;"></p>
+					</div>
+					<div class="form-wrapper">
+						<label for=""><span style="color: red;">*</span>Confirm Password</label>
+						<input type="password" class="form-control" required name="repswd"><p id="repswdpara" style="color: red;"></p>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" required > I caccept the Terms of Use & Privacy Policy.
+							<span class="checkmark"></span>
+						</label>
+					</div>
+					<button type="submit" >Register Now</button>
+				</form>
+			</div>
+		</div>
+		
+	</body>
+</html>

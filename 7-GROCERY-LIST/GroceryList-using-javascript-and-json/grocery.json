@@ -1,0 +1,52 @@
+{
+    "list":[
+        {"slno":1,
+          "Name":"Sugar",
+          "Image":"./image/img2.jpeg",
+          "Quantity":"1Kg",
+          "Unit":"1",
+          "Departments":"Grocery",
+          "Notes":"gud product"
+        },
+        {"slno":2,
+        "Name":"Rice",
+        "Image":"./image/img1.jpeg",
+        "Quantity":"1Kg",
+        "Unit":"1",
+        "Departments":"Grocery",
+        "Notes":"gud product"
+       },
+        {"slno":3,
+          "Name":"Tomato",
+          "Image":"./image/img3.jpeg",
+          "Quantity":"1Kg",
+          "Unit":"1",
+          "Departments":"Grocery",
+          "Notes":"gud product"
+        },
+        {"slno":4,
+        "Name":"Cilli Powder",
+        "Image":"./image/img4.jpeg",
+        "Quantity":"1Kg",
+        "Unit":"1",
+        "Departments":"Grocery",
+        "Notes":"gud product"
+      },
+       {"slno":6,
+          "Name":"Salt",
+          "Image":"./image/img1.jpeg",
+          "Quantity":"1Kg",
+          "Unit":"1",
+          "Departments":"Grocery",
+          "Notes":"gud product"
+        },
+        {"slno":7,
+        "Name":"Reva",
+        "Image":"./image/img2.jpeg",
+        "Quantity":"1Kg",
+        "Unit":"1",
+        "Departments":"Grocery",
+        "Notes":"gud product"
+       }
+    ]
+}

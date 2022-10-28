@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+   
+    <table  class="table table-condensed">
+       <thead >
+        <th>SL.NO</th>
+        <th>Name</th>
+        <th>Image</th>
+        <th>Quantity</th>
+        <th>Unit</th>
+        <th>Departments</th>
+        <th>Unit</th>
+       </thead>
+       <tbody id="demo"></tbody>
+    </table>
+    <button onclick="myFunction()">DISPLAY</button>
+    <script>
+        function myFunction(){
+            var httpobj=new XMLHttpRequest();
+            httpobj.onreadystatechange=function(){
+                if(this.readyState==4 && this.status==200){
+                    var res=JSON.parse(this.responseText);
+                    var a=res.list;
+                   
+                    var dis=""
+                   
+                    console.log(a[0].Image);
+
+                    for(var i=0;i<a.length;i++){
+                        dis +="<tbody ><tr><td>"+a[i].slno+"</td>"+"<td>"+a[i].Name+"</td> <td>  <img src="+a[i].Image+" height='50px' width='80px'>"+"</td> <td>"+a[i].Quantity+"</td> <td>"+a[i].Unit+"</td> <td>"+a[i].Departments+"</td> <td>"+a[i].Notes+"</td></tr>";
+                        
+                    }
+                    document.getElementById("demo").innerHTML=dis;
+                }
+            }
+
+            httpobj.open("GET","grocery.json",true);
+            httpobj.send();
+        }
+    </script>
+</body>
+</html>
