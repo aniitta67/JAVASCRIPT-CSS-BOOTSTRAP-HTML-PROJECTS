@@ -1,0 +1,47 @@
+{
+    "music":[
+        {
+            "name":"Middle of the night",
+            "artist":"Elley Duhe",
+            "image":"./images/middle-of-the-night.jfif",
+            "audios":"./audio/middle-of-the-night.mp3"
+        },
+        {
+            "name":"Withoust me",
+            "artist":"Halsey",
+            "image":"./images/without-me.jfif",
+            "audios":"./audio/without-me.mp3"
+        },
+        {
+            "name":"Heat Waves",
+            "artist":"Glass Animals",
+            "image":"./images/animals.jpg",
+            "audios":"./audio/heat-waves.mp3"
+        },
+        {
+            "name":"Worth It",
+            "artist":"",
+            "image":"",
+            "audios":""
+        },
+        {
+            "name":"Hurts so good",
+            "artist":"",
+            "image":"",
+            "audios":""
+        },
+        {
+            "name":"Kiss and makeup",
+            "artist":"Black pink",
+            "image":"./images/kissandmakeup.jfif",
+            "audios":"./audio/kissandmakeup.mp3"
+        },
+        {
+            "name":"Dynamite",
+            "artist":"bts",
+            "image":"./images/dynamite.jfif",
+            "audios":"./audio/dynamite.mp3"
+        }
+
+    ]
+}

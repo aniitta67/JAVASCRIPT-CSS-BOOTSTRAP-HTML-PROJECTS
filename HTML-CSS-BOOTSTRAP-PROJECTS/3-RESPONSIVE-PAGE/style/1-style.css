@@ -1,0 +1,164 @@
+*{  
+    /* in this case we need not to do this .so commented */
+    /* margin: 0; */
+    /* padding: 0;*/
+    box-sizing: border-box; 
+}
+/* rem is a reltional value which is relational to html's default font size.
+2 rem means 2 times bigger of html's font size. while em is relative to its parent's font size.
+
+ */
+body{
+    margin: 0;
+    font-size: 1.2rem;
+    background-color: pink;
+}
+
+/* media query -order matters.if the second media query comes first that wont work. cause 400 and biger include 650. if we 
+need to work that have to set a max too.*/
+/* min width of 400px and above the bg-color changes. have to include query selecter ex;body{} in the media  */
+
+
+/* @media(min-width:400px){
+  body{
+    background-color: lavender;
+  }
+
+} */
+/* from a min width of 650 and above */
+/* @media(min-width:650px){
+    body{
+      background-color: rgba(255, 255, 0, 0.479);
+    }
+  
+  } */
+
+/* 
+@media(min-width:650px){
+    body{
+      background-color: rgba(255, 255, 0, 0.479);
+    }
+}
+@media(min-width:400px) and (max-width:649px){
+        body{
+          background-color: lavender;
+        }
+      
+} */
+
+/* orientation */
+/* when the viewport minimizes here 500*478 lanscape color change */
+@media(min-width:500px) and (orientation: landscape) {
+    body{
+      background-color: #fff;
+    }
+}
+
+/*step-3 The problem now facing is that on minimizing the contents overlapping each other. SO
+upto a max width the items must be flex-direction:column--default the flex-direction is row
+*/
+
+/* @media(max-width:670px){
+   .row{
+    flex-direction: column; best practice is to make media queries combined. so it combined in the below media query eith the col styles
+    
+   } */
+   /* .col-1{   This wont work cause this for media query which is over ridden by the below styles which are suitable for all sizes
+    width: 100%;
+   }
+   .col-2{
+    width: 100%;
+   }
+   .col-3{
+    width: 100%;
+   } */
+/* } */
+
+
+
+/*step-4 The problem is the cols have not a 100% width cause we already provided cols with width.so  */
+
+
+/* Typography */
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+h2{
+    font-size: 1.5rem;
+}
+span{
+    color:#998219;
+}
+p{
+    margin: 0;
+}
+
+/* layout */
+.container{
+    /* conainer width can be 100% or 95%. Here image has not enough size.so used 50%*/
+    width: 95%;
+    max-width: 980px;
+    /* to get ontent to th middle */
+    margin: 0 auto;
+    
+
+    
+    
+
+}
+img{
+    /* giving max-width is a good practice for more image quality.Here we dont have a picture of aapropriate size.so used width property
+     */
+    width: 100%;
+    
+    
+}
+.row{
+    /* to align contents in columns */
+    display: flex;
+    /*step=2. This will  align items(cols) to the start .In this case it is visible only for the col-1 with bg-color black.
+    Here we can see the extra space after the text in those cols shrinks.
+    Tere are many other values for it. such as flex-end,flex-baseline,etc(first lines of each child would be exactly
+    at the same line),. all cols will go to end.
+    .parent{display:flex; align-items-flex-start} affects its child. 
+    */
+    align-items: flex-start;
+
+    /*step=11 we have our columns 100% width in total. if we ue justify content now it wont effect. 
+    so we rearaange col-1(25),col-2(50),col-3(75) into col-1(25-5),col-2(50-5),col-3(75-5).
+    space-between value take this etc space and distribute between cols only. If we give space-eventually
+    that will set same space between and around of cols like left of the col and so.
+    space-around will set space between and around like there will be diff in space of two.
+    */
+    justify-content: space-between;
+    margin: 2em 0;
+}
+.col-1{
+width:20%
+}
+.col-2{
+width:45%
+}
+.col-3{
+ width: 70%;
+}
+.col-bg{
+    background-color: #030202d8;
+    color: #ffffffcb;
+    padding: 1em;
+}
+
+
+@media(max-width:670px){
+    .row{
+        flex-direction: column;
+        
+       } 
+    .col-1,
+    .col-2,
+    .col-3{   
+     width: 100%;
+    }
+    
+ }

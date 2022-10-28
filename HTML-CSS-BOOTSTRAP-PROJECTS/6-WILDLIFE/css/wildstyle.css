@@ -1,0 +1,133 @@
+ *{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-image: url('/image/foxbackground1.jpg');
+    background-size: cover !important;
+    background-repeat: no-repeat;
+
+}
+h3,h4,h5{
+    font-weight: 800 !important;
+}
+p{
+    color: #ffffff;
+}
+h1{
+    color: #ff4d29 !important;
+}
+a{
+    color: #e9eff4;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    font-weight: 500;
+    
+}
+img{
+    width: 100%;
+
+}
+
+.navbar .navbar-nav .nav-link{
+    color: #ffffff !important;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:active
+{
+    color: #ff4d29 !important;
+
+}
+.navbar{
+    /* x-axis,y-axis,blur  */
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.8);
+    
+}
+.navbar-brand{
+    font-weight: 700;
+    font-size: 26px;
+    color: #ffffff !important;
+}
+.navbar-brand span{
+    
+    color: #ff4d29;
+}
+/* button(cSIGN UP) */
+.btn{
+    /* top&bottom left&right */
+    padding: 9px 24px;
+    font-weight: 500;
+    background-color: #ff4d29;
+    color: #ffffff;
+    border-color: #ff4d29;
+}
+.btn-brand{
+    background-color: #ff4d29;
+    color: #ffffff;
+    border-color: #ff4d29;
+}
+.btn-brand:hover{
+    color: #ffffff;
+    background-color: #e04122;
+    
+}
+.bx{
+
+    color: #ffffff;
+    background-color: #090909;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 100%;
+
+}
+
+.bx-search:hover{
+   
+    color: #ff4d29 !important;
+    background-color: #ffffff6e !important;
+}
+.articles{
+    background-color: #aea8a8fd;
+    
+}
+@media (min-width: 768px) {
+    .carousel-inner {
+      display: flex;
+    }
+    .carousel-item {
+      margin-right: 0;
+      flex: 0 0 33.333333%;
+      display: block;
+    }
+  }
+  .form{
+    background-color: #aea8a8fd ;
+    
+
+
+  }
+
+
+  #milestone{
+    background:linear-gradient(rgba(84, 79, 78, 0.722),rgba(90, 85, 84, 0.722)),url(/image/foxbackground1.jpg);
+
+}
+
+
+
+#milestone .display-4,
+#milestone p{
+    color: #ffffff;
+
+}
+#milestone .display-4{
+    font-weight: 700;
+}
+
+
+.input-group{
+width: 300;
+}

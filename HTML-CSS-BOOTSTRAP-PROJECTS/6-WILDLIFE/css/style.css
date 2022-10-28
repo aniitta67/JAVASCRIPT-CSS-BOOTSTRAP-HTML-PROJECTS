@@ -1,0 +1,50 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    
+}
+.carousel-item img {
+    height: 800px;
+
+}
+.carousel-item h5 p{
+
+    font-size: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.About-us{
+    background-color: black;
+    height: 400px;
+}
+.services{
+    background-color: black;
+}
+.services figcaption{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact-us label{
+    font-weight: bold;
+    font-size: larger;
+    
+}
+.contact-us{
+    background-image: url('/image/img1.jpg');
+    background-size: cover;
+}
+.sidebar{
+    text-align: left;
+    padding-top:40px ;
+    padding-right: 10px;
+    list-style-type: none;
+
+
+}
+.list-heading{
+    font-weight: bold;
+}

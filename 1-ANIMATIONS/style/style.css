@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f8ff88;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.box{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}

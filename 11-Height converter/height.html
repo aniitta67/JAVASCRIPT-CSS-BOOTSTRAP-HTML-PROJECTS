@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="image/hero.jpg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/boxicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section id="height" class="">
+    <div class="container">
+        <div class="row justify-content-center convert" data-aos="fade-up" data-aos-delay="150">
+          <div class="col col-xl-6 col-lg-8 form-group">
+            <h1>HEIGHT CONVERTER </h1>
+           
+                <input type="text" id="feet" class="form-control" placeholder="feet"><br><br>
+                <input type="text" id="inches" class="form-control" placeholder="inches">
+                <button type="submit" onclick="ConvertToCm()" >CONVERT TO CM</button>
+                <p id="result">result</p>
+          
+                
+                 
+          
+          </div>
+        </div>
+    </div>
+    </section>
+
+
+
+    <script>
+        function ConvertToCm(){
+            let feet=document.getElementById("feet").value;
+            let inch=document.getElementById("inches").value;
+            let totalInch=feet*12+inch;
+            let cm=totalInch*2.5;
+            document.getElementById("result").innerHTML=`${cm}`
+
+
+        }
+    </script>
+    
+    <script src="/js/bootstrap.bundle.min.js"></script>  
+    <script src="/js/jquery.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/boxicons.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>Anitta Bootstrap 5 Template</title>
+  </head>
+  <!-- data-bs-spy="scroll" data-bs-target="#navbar-example(here given .navbar)" here for making the nav links with brand color when they are active (
+    from bootstrap scrollpy->via attributes
+  )-->
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
+   <!--  Nav bar -->
+   <nav class="top-navbar" id="home">
+    <div class="container">
+        <!-- we have first given only the 'row' and the result was both the contents in the dif col are
+             at same place.to make the social links end of the nav we use justify content b/w.so they r -->
+        <div class="row justify-content-between">
+            <div class="col-auto">
+                <p class="box-icon">
+                    <i class='bx bxs-envelope'></i>
+                    <span>anittathomasanu@gmail.com</span>
+                </p>
+              
+                <p class="box-icon">
+                    <i class='bx bxs-phone-call'></i>
+                    <span>+91 9856 756</span>
+                </p>
+              
+            </div>
+            <div class="col-auto">
+                <div class="social-links">
+                   
+                      <a href="https://www.facebook.com"><i class='bx bxl-facebook' ></i> </a>
+                      <a href="#"><i class='bx bxl-twitter' ></i> </a>
+                      <a href="#"> <i class='bx bxl-github' ></i> </a>
+                      <a href="https://www.youtube.com/"> <i class='bx bxl-youtube' ></i> </a>
+                   
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+   </nav>
+<!-- sticky-top: for moving the scrollbar with the image -->
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Logo<span>.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- margin start auto(ms-auto) -->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active"  href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="#home"> Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blogs</a>
+          </li>
+          
+        </ul>
+         <!-- to make a gap between buttons and links use margin small for larger screen -->
+        <a href="" class="btn btn-brand ms-lg-3">Contact us</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Slider -->
+  <!-- min-vh-100 utilities to set the width and height relative to the viewport height. -->
+  <!-- owl-carousel owl-theme: from owl carousel basic code to make slide  -->
+  <!-- for the slide property we copied the js owl query to the app.js and gave the 'id="hero-slider"' there and the link of script at the botom -->
+  <div class="slider-wrapper owl-carousel owl-theme" id="hero-slider">
+   <!-- d-flex align-items-center :To align the text and btn at center  -->
+    
+   <div class="slide1 min-vh-100 bg-cover d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="cols-12">
+            <h6 class="text-uppercase text-white">We craft digital experiences</h6>
+            <!--  display-3 helps to make the text 3 times bigger-->
+            <h1 class="display-3 my-3 text-white text-uppercase"> Design driven for <br/> professionals </h1>           
+            <a href="#" class="btn btn-brand ">Get Started</a>
+            <!-- ms-md-3:to create distance between butoons  -->
+            <a href="#" class="btn btn-outline-light ms-md-3 ">Our works</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide2 min-vh-100 bg-cover d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="cols-12 text-center">
+            <h6 class="text-uppercase text-white">We craft digital experiences</h6>
+            <!--  display-3 helps to make the text 3 times bigger-->
+            <h1 class="display-3 my-3 text-white text-uppercase"> Design driven for <br/> professionals </h1>           
+            <a href="#" class="btn btn-brand ">Get Started</a>
+            <!-- ms-md-3:to create distance between butoons  -->
+            <a href="#" class="btn btn-outline-light ms-md-3 ">Our works</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+
+
+
+  </div>
+
+
+   <!-- About us -->
+   <section id="about">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-5">
+          <div class="row">
+            <div class="col-12 box-info">
+              <img src="./img/icon4.png" >
+              <div>
+                <h5>Digital Marketing</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde cupiditate nisi nam, 
+                  assumenda libero possimus impedit qui. Culpa earum impedit expedita doloremque nam quos fugiat a sequi eaque, dicta saepe.</p>
+              </div>
+
+            </div>
+            <div class="col-12 box-info">
+              <img src="./img/icon4.png" >
+              <div>
+                <h5>Digital Marketing</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde cupiditate nisi nam, 
+                  assumenda libero possimus impedit qui. Culpa earum impedit expedita doloremque nam quos fugiat a sequi eaque, dicta saepe.</p>
+              </div>
+
+            </div>
+            <div class="col-12 box-info">
+              <img src="./img/icon4.png" >
+              <div>
+                <h5>Digital Marketing</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde cupiditate nisi nam, 
+                  assumenda libero possimus impedit qui. Culpa earum impedit expedita doloremque nam quos fugiat a sequi eaque, dicta saepe.</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-5">
+          <img src="./img/icon4.png" alt="">
+        </div>
+      </div>
+    </div>
+   </section>
+
+
+   <!-- MILE STONE -->
+
+<section id="milestone" class="bg-cover">
+  <div class="container ">
+    <div class="row text-center justify-content-center">
+      <div class="col-lg-2 col-sm-6">
+        <div class="display-4">12345 </div>
+          <p class="mb-0">Happy clients</p>
+       
+      </div>
+      <div class="col-lg-2 col-sm-6">
+        <div class="display-4 ">12345 </div>
+          <p class="mb-0">Happy clients</p>
+       
+      </div>
+      <div class="col-lg-2 col-sm-6">
+        <div class="display-4 ">12345 </div>
+          <p class="mb-0">Happy clients</p>
+       
+      </div>
+      <div class="col-lg-2 col-sm-6">
+        <div class="display-4">12345 </div>
+          <p class="mb-0">Happy clients</p>
+       
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+
+<section id="services" >
+  <div class="container ">
+   <div class="row">
+    <div class="col-12 intro text-center">
+      <h6>OUR SERVICES</h6>
+      <h1> services</h1>
+      <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut porro cumque est magni tempore, molestiae ipsa ipsum dignissimos quasi amet repellendus, nihil 
+        pariatur minima odit repellat eos quo rerum reprehenderit!</p>
+    </div>
+   </div>
+   <div class="row g-4">
+    <div class="col-lg-4 col-sm-6">
+      <div class="service-box">
+        <img src="img/icon4.png" alt="">
+        <h5 >Digital marketing</h5>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit exercitationem error minus magnam id odit autem perferendis architecto, 
+           et sunt quas voluptatem illo delectus magni temporibus nihil animi. Commodi, eos.</p>
+      </div>
+      
+    </div>
+    <div class="col-lg-4 col-sm-6">
+      <div class="service-box">
+        <img src="img/icon4.png" alt="">
+        <h5 >Digital marketing</h5>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit exercitationem error minus magnam id odit autem perferendis architecto, 
+           et sunt quas voluptatem illo delectus magni temporibus nihil animi. Commodi, eos.</p>
+      </div>
+      
+    </div>
+    <div class="col-lg-4 col-sm-6">
+      <div class="service-box">
+        <img src="img/icon4.png" alt="">
+        <h5 >Digital marketing</h5>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit exercitationem error minus magnam id odit autem perferendis architecto, 
+           et sunt quas voluptatem illo delectus magni temporibus nihil animi. Commodi, eos.</p>
+      </div>
+      
+    </div>
+    <div class="col-lg-4 col-sm-6">
+      <div class="service-box">
+        <img src="img/icon4.png" alt="">
+        <h5 >Digital marketing</h5>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit exercitationem error minus magnam id odit autem perferendis architecto, 
+           et sunt quas voluptatem illo delectus magni temporibus nihil animi. Commodi, eos.</p>
+      </div>
+      
+    </div>
+    <div class="col-lg-4 col-sm-6">
+      <div class="service-box">
+        <img src="img/icon4.png" alt="">
+        <h5 >Digital marketing</h5>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit exercitationem error minus magnam id odit autem perferendis architecto, 
+           et sunt quas voluptatem illo delectus magni temporibus nihil animi. Commodi, eos.</p>
+      </div>
+      
+    </div><div class="col-lg-4 col-sm-6">
+      <div class="service-box">
+        <img src="img/icon4.png" alt="">
+        <h5 >Digital marketing</h5>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit exercitationem error minus magnam id odit autem perferendis architecto, 
+           et sunt quas voluptatem illo delectus magni temporibus nihil animi. Commodi, eos.</p>
+      </div>
+      
+    </div>
+   </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- PORTFOLIO -->
+
+<section id="portfolio" class="bg-light" >
+  <div class="container ">
+   <div class="row">
+    <div class="col-12 intro text-center">
+      <h5 >Digital marketing</h5>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit exercitationem error minus magnam id odit autem perferendis architecto, 
+           et sunt quas voluptatem illo delectus magni temporibus nihil animi. Commodi, eos.</p>
+      
+      
+    </div>
+   </div>
+    </div>
+  </div>
+
+  <div id="project-slider" class="owl-theme owl-carousel" >
+    <div class="project">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fuga incidunt earum soluta? Nesciunt excepturi error quam 
+      dolore obcaecati deserunt dolorem eum temporibus blanditiis maiores! Quibusdam quo deleniti architecto incidunt!
+    </div>
+    <div class="project">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fuga incidunt earum soluta? Nesciunt excepturi error quam 
+      dolore obcaecati deserunt dolorem eum temporibus blanditiis maiores! Quibusdam quo deleniti architecto incidunt!
+    </div>
+    <div class="project">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fuga incidunt earum soluta? Nesciunt excepturi error quam 
+      dolore obcaecati deserunt dolorem eum temporibus blanditiis maiores! Quibusdam quo deleniti architecto incidunt!
+    </div>
+  </div>
+</section>
+
+    <!-- javascript -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/app.js"></script>
+    
+
+   
+
+    
+  </body>
+</html>

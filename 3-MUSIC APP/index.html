@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC APP</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h2>MUSIC APP</h2>
+    </header>
+    <div class="player">
+        <!-- DETAILS OF SONG -->
+      <div class="song-details">
+         <div class="image"></div>
+         <div class="songname"></div>
+         <div class="artist"></div>
+      </div>
+       <!-- BUTTONS -->
+       <div class="buttons">
+        <div class="prev-btn" onclick="prevSong()">
+            <span class="material-icons md-68">skip_previous</span>
+            
+        </div>
+        <div class="play-pause-btn" >
+            <span class="material-icons md-68 play" id="play-pause" onclick="loadSong()">play_circle_filled</span>
+        </div>
+        <div class="next-btn" onclick="nextSong()">
+            <span class="material-icons md-68">skip_next</span>
+        </div>
+       </div>
+
+    </div>
+
+ 
+    <script src="./javascript/app.js"></script>
+</body>
