@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Combo&family=Fira+Sans&family=Merriweather:wght@300;400&family=Monoton&family=Roboto+Slab:wght@800&display=swap');
+body{
+    font-family:"Barlow", sans-serif;
+    line-height: 1.7;
+    color: #516171;
+    background:linear-gradient(rgba(50, 20, 9, 0.205),rgba(9,32,50,0.4)),url('/img/game1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.btn{
+    padding: 9px 24px;
+    font-weight: 500;
+}
+
+.btn:hover{
+    /* top&bottom left&right */
+    padding: 9px 24px;
+    font-weight: 500;
+    background-color: #ff4d29;
+    color: #ffffff;
+    border-color: #ff4d29;
+}
+p.result{
+
+    font-family:"Barlow", sans-serif;
+    line-height: 1.7;
+    font-size: larger;
+    font-weight: bold;
+    color: #072c13;
+}

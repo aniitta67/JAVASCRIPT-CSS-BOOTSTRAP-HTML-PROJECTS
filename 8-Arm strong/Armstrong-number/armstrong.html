@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAVICONS -->
+    <link rel="icon" href="image/hero.jpg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/boxicons.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+
+    <title>Armstrong number</title>
+</head>
+
+<body>
+   
+        <div class="container">
+          
+                    <div class="service-box form-group">
+                    <h5 >ARMSTRONG NUMBER</h5>
+                    
+                <input type="text" id="number" class="form-control" placeholder="Enter a number">
+                <input type="button" id="btn" class="btn btn-brand " value="SUBMIT" onclick="armstrong()">
+                <p id="result"></p>
+                      
+                    </div>
+              
+        </div>
+
+        <script>
+           
+            function armstrong(num){
+
+               const number=document.getElementById("number").value;
+               var temp=number;
+               var count=number.length;
+               console.log(count)
+               var sum=0; 
+               while(temp>0){
+               var rem=temp%10;
+               sum+=rem**count;
+               temp=parseInt(temp/10);
+              }
+                if(sum==number){
+                    document.getElementById("result").innerHTML=`${number} is an armstrong number`;
+                }
+                else{
+                    document.getElementById("result").innerHTML=`${number} is not an armstrong number`;
+                }
+
+            }
+        </script>
+
+
+</body>
+</html>

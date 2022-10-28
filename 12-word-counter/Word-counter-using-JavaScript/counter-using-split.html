@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<body style="text-align: center;">
+	<h1 style="color: rgb(128, 0, 128);box-shadow:  0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)">
+		WORD COUNTER
+	</h1>
+
+	
+<p>
+		Type in the textbox to
+		automatically count the words
+	</p>
+
+
+
+	<textarea id="word" oninput="countWord()"
+		rows="10" cols="60">
+	</textarea>
+	<br><br>
+
+	
+<p> Word Count:
+		<P id="show">0</P>
+	</p>
+    <p> Letter Count:
+		<P id="show1">0</P>
+	</p>
+
+
+
+	<script>
+		function countWord() {	
+			var words = document.getElementById("word").value;
+			var count = 0;
+
+            /*====COUNT LETTERS====*/
+            var letters=0;
+			for(let i=0;i<words.length;i++){
+                let text=words[i].replace(/[\t\n\r\.\?\!]/gm, " ");
+                if(text!=" "){
+                    letters+=1;
+                }
+            }
+             document.getElementById("show1").innerHTML =letters;    /* ====END COUNT LETTERS====*/
+          
+            /* ====COUNT WORDS====*/
+            let split = words.replace(/[\t\n\r\.\?\!]/gm, " ").split(" ");
+			for (var i = 0; i < split.length; i++) {
+              
+				if (split[i] != "") {
+					count += 1;
+				}
+			}
+			document.getElementById("show").innerHTML = count;  /* ====END COUNT WORDS====*/     
+
+		}
+	</script>
+</body>
+
+</html>

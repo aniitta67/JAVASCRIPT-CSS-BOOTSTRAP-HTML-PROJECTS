@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Combo&family=Fira+Sans&family=Merriweather:wght@300;400&family=Monoton&family=Roboto+Slab:wght@800&display=swap');
+body{
+    font-family:"Barlow", sans-serif;
+    line-height: 1.7;
+    color: #516171;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700 !important;
+}
+a{
+    color: #092032;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    font-weight: 500;
+    
+}
+img{
+    width: 100%;
+
+}
+section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.bg-cover{
+    background-position: center !important;
+    background-size: cover !important;
+}
+.intro{
+    margin-bottom: 40px;
+     
+}
+.intro h6{
+   font-weight: 400;
+   color: #ff4d29;
+     
+}
+/* As the paragraph cover whole width */
+.intro p{
+    max-width: 500px;
+    /* to get the paragraph in the middle   */
+    margin:auto;
+}
+
+
+.top-navbar{
+ background-color: #ff4d29;
+ padding-top: 5px;
+ padding-bottom:5px ;
+
+
+}
+/* results nav p or p*/
+.top-navbar p{
+    margin-bottom: 0;
+    display: inline-block;
+    margin-right: 20px;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+.top-navbar i,
+.top-navbar span{
+    vertical-align: middle;
+}
+.social-links a{
+    width: 34px;
+    height: 34px;
+    background-color: rgba(255, 255, 255, 0.304);
+    display: inline-flex;
+    align-items: center;
+    /* to make the content(icons) in the center of the block */
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 100%;
+}
+.social-links a:hover{
+    background-color: #ffffff;
+    color: #ff4d29;
+}
+.navbar{
+    /* x-axis,y-axis,blur  */
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.8);
+    
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active
+{
+    color: #ff4d29;
+
+}
+
+.navbar-brand{
+    font-weight: 700;
+    font-size: 26px;
+    color: #092032;
+}
+.navbar-brand span{
+    
+    color: #ff4d29;
+}
+/* button(contact us) */
+.btn{
+    /* top&bottom left&right */
+    padding: 9px 24px;
+    font-weight: 500;
+}
+.btn-brand{
+    background-color: #ff4d29;
+    color: #ffffff;
+    border-color: #ff4d29;
+}
+.btn-brand:hover{
+    color: #ffffff;
+    background-color: #e04122;
+    
+}
+/* slider */
+/* Text in the slide may change visibility when thebbackground changes */
+/* so we make a layer above the background image by adjusting opacity of the 
+dark colors */
+.slide1{
+    background:linear-gradient(rgba(9,32,50,0.4),rgba(9,32,50,0.4)),url(/img/bg_banner1.jpg);
+      
+} 
+.slide2{
+    background:linear-gradient(rgba(9,32,50,0.4),rgba(9,32,50,0.4)),url(/img/bg_banner2.jpg);
+      
+}
+/* owl carousel slide nav design- got the class by inspecting the buttons */
+.owl-prev,
+.owl-next{
+    position: absolute;
+    top:50%;
+    width: 60px !important;
+    height:60px !important ;
+    display:grid ;
+    place-items: center;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    margin-top: -30px !important;
+    color: #ffffff !important;
+    font-size: 12px !important;
+    border-radius: 100% !important;
+}
+.owl-prev{
+    left: 0;
+}
+.owl-next{
+    right: 0;
+}
+.owl-next:hover,
+.owl-prev:hover{
+    background-color: #ff4d29 !important;
+}
+
+.box-info{
+    display: flex;
+    align-items: center;
+    
+}
+.box-info img{
+    width: 90px;;
+    margin-right: 24px;
+}
+/* MILE STONE */
+#milestone{
+    background:linear-gradient(rgba(255, 77, 41, 0.722),rgba(255, 77, 41, 0.722)),url(/img/bg_banner1.jpg);
+
+}
+
+
+
+#milestone .display-4,
+#milestone p{
+    color: #ffffff;
+
+}
+#milestone .display-4{
+    font-weight: 700;
+}
+/* Services */
+.service-box {
+    padding: 32px;
+    box-shadow:0px 6px 30px rgba(0, 0, 0, 0.404);
+    text-align: center;
+}
+
+.service-box img{
+    width: unset;
+}
+.service-box h5{
+    margin-top: 25px;
+    margin-bottom: 12px;
+}

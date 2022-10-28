@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 id="heading">DAY OF WEAK</h1>
+     <div class="container">
+        
+      <div class="date">
+        <h1>DATE</h1>
+        <button onclick="finddate()" ></button> <p id="date"></p>
+      </div>
+     
+        <div class="date">
+          <h1>DAY</h1>
+          <button onclick="findday()" ></button> <p id="day"></p>
+        </div>
+
+        <div class="date">
+            <h1>MONTH</h1>
+            <button onclick="findmonth()" ></button> <p id="month"></p>
+        </div>
+
+        <div class="date ">
+            <h1>YEAR</h1>
+            <button onclick="findyear()" ></button> <p id="year"></p>
+        </div>
+        <div class="date">
+            <h1>TIME</h1>  
+            <button onclick="findtime()" ></button><p id="time"></p>
+        </div>
+
+
+       </div>
+
+
+
+
+
+    <script>
+   function findday(){
+    var d=new Date();
+    var day=d.getDay();
+        switch(day){
+            case 0:
+                console.log("SUNDAY");
+                document.getElementById("day").innerHTML="SUNDAY"
+                break;
+            case 1:  
+                console.log("MONDAY");
+                document.getElementById("day").innerHTML="MONDAY"
+                break;  
+            case 2:  
+                console.log("TUESDAY");
+                document.getElementById("day").innerHTML="TUESDAY"
+                break;  
+            case 3:  
+                console.log("WEDNESDAY");
+                document.getElementById("day").innerHTML="WEDNESDAY"
+                break; 
+            case 4:  
+                console.log("THURSDAY");
+                document.getElementById("day").innerHTML="THURSDAY"
+                break;   
+            case 5:  
+                console.log("FRIDAY");
+                document.getElementById("day").innerHTML="FRIDAY"
+                break;   
+            case 6:  
+                console.log("SATURDAY");
+                document.getElementById("day").innerHTML="SATURDAY"
+                break; 
+            default:  
+                console.log("EXCEPTION");
+                
+                break;        
+
+        }
+
+   }    
+
+   function findmonth(){
+    var d=new Date();
+    var month=d.getMonth();
+    var months=document.getElementById("month");
+        switch(month){
+            case 0:   
+                months.innerHTML="JANUARY"
+                break;
+            case 1:  
+                months.innerHTML="FEBRUARY"
+                break;  
+            case 2:  
+                months.innerHTML="MARCH"
+                break;  
+            case 3:  
+                months.innerHTML="APRIL"
+                break; 
+            case 4:  
+                months.innerHTML="MAY"
+                break;   
+            case 5:  
+                months.innerHTML="JUNE"
+                break;   
+            case 6:  
+                months.innerHTML="JULY"
+                break;
+            case 7:
+                months.innerHTML="AUGUST";
+                break;
+            case 8:    
+                months.innerHTML="SEPTEMBER"
+                break;  
+            case 9:  
+                months.innerHTML="OCTOBER";
+                break;  
+            case 10:  
+                months.innerHTML="NOVEMBER";
+                break; 
+            case 11:  
+                months.innerHTML="DECEMBER";
+                break;   
+          
+            default:  
+                console.log("EXCEPTION");
+                break;        
+
+        }
+    }
+
+    function findyear(){
+    var d=new Date();
+    var year=d.getFullYear();
+    document.getElementById("year").innerHTML=`${year}`
+
+    }
+
+    function findtime(){
+    var d=new Date();
+    var hours=d.getHours();
+    var minute=d.getMinutes();
+    var seconds=d.getSeconds();
+    document.getElementById("time").innerHTML=`${hours}:${minute}:${seconds}`
+
+    }
+
+    function finddate(){
+    var d=new Date();
+    document.getElementById("date").innerHTML=`${d}`
+
+    }
+
+    </script>
+</body>
+</html>
